@@ -1,0 +1,28 @@
+define(function(require,exports,module){
+	__.currentMenuItems=[
+	{
+	         url:"applications/StartMeeting/current.html",
+	         id:"menu_contact_history",
+	         name:"最近联系",
+	},
+	{
+	         url:"applications/StartMeeting/index.html",
+	         id:"menu_contactlist",
+	         name:"通讯录"
+	},
+	{
+	         url:"applications/StartMeeting/dial.html",
+	         id:"menu_dial_pad",
+	         name:"拨号键盘"
+	},
+	{
+	         url:"applications/Meeting/manager.html",
+	         id:"menu_meeting_manager",
+	         name:"会议管理"
+	},
+	{
+	         url:"applications/UserManager/newEnterpriseUser.html",
+	         id:"menu_settings_index",
+	         name:"帐号管理"
+	}]
+})

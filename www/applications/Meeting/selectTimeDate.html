@@ -1,0 +1,13 @@
+<div data-role="page" self-fVersion="2" id="meeting_make_an_appointment" self-menuIndex="3">
+	<div data-role="header" data-position="fixed">
+        <h1>选择日期</h1>
+    </div>
+    <div data-role="content">
+        <div id="dateTimePicker">
+            <label>请选择会议的时间日期</label>
+            <input type="datetime-local" id="dateTimeInput"/>
+            <button data-theme="d" self-callback="confirmAppointment">确定</button>
+            <button data-theme="e" self-callback="cancel">取消</button>
+        </div>
+    </div>
+</div>

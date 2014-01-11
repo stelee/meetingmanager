@@ -1,0 +1,26 @@
+<div data-role="page" id="usermanager_do_register">
+    <script src="js/doRegister.js"></script>
+    <style type="text/css">
+        .verifyZone
+        {
+            margin-top:100px;
+        }
+    </style>
+    <div data-role="content" class="center">
+        <div class="loginMain">
+            <h1>请输入您的手机号码，用户会议系统呼叫您本人，并请允许我们使用您的通讯录，来帮助您选择会议参加人。</h1>
+            <div class="myForm">
+                <input type="text" name="phonenumber" id="phonenumber" placeholder="手机号码"/>
+                <input type="text" name="areanumber" id="areanumber" placeholder="默认区号"/>
+                <button id="getVerificationCodeBtn" data-theme="d">获得验证码</button>
+                <div class="verifyZone">
+                    <input type="text" name="verifyCode" id="verifyCode" placeholder="填写验证码">
+                    <button id="finishRegisterBtn" data-theme="c">完成注册</button>
+                    <div id="uploadContactsContainer" style="display:none">
+                        <button id="uploadContactsBtn" data-theme="d">上传联系人</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

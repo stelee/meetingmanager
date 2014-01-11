@@ -1,0 +1,177 @@
+/* === HEADER BARS - DEFAULT AND BLACK === */
+.ui-header {
+	border: 0 none;
+	padding: 1px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+		-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+		-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+		box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+			background: #b0bccd; /* Old browsers */
+			background: -moz-linear-gradient(top,  #b0bccd 0%, #889bb3 49%, #8094ae 50%, #6d84a2 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(49%,#889bb3), color-stop(50%,#8094ae), color-stop(100%,#6d84a2)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #b0bccd 0%,#889bb3 49%,#8094ae 50%,#6d84a2 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #b0bccd 0%,#889bb3 49%,#8094ae 50%,#6d84a2 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #b0bccd 0%,#889bb3 49%,#8094ae 50%,#6d84a2 100%); /* IE10+ */
+			background: linear-gradient(top,  #b0bccd 0%,#889bb3 49%,#8094ae 50%,#6d84a2 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0bccd', endColorstr='#6d84a2',GradientType=0 ); /* IE6-9 */
+}
+
+.ui-header.ui-bar-b {
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+		background: #717172; /* Old browsers */
+		background: -moz-linear-gradient(top,  #717172 0%, #3a3a3a 50%, #0d0d0f 50%, #0f0f10 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#717172), color-stop(50%,#3a3a3a), color-stop(50%,#0d0d0f), color-stop(100%,#0f0f10)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #717172 0%,#3a3a3a 50%,#0d0d0f 50%,#0f0f10 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #717172 0%,#3a3a3a 50%,#0d0d0f 50%,#0f0f10 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #717172 0%,#3a3a3a 50%,#0d0d0f 50%,#0f0f10 100%); /* IE10+ */
+		background: linear-gradient(top,  #717172 0%,#3a3a3a 50%,#0d0d0f 50%,#0f0f10 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#717172', endColorstr='#0f0f10',GradientType=0 ); /* IE6-9 */
+}
+div.ui-btn {
+	padding: 2px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+		background: #282a2f; /* Old browsers */
+		background: -moz-linear-gradient(top,  #282a2f 0%, #3f434b 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282a2f), color-stop(100%,#3f434b)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #282a2f 0%,#3f434b 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #282a2f 0%,#3f434b 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #282a2f 0%,#3f434b 100%); /* IE10+ */
+		background: linear-gradient(top,  #282a2f 0%,#3f434b 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282a2f', endColorstr='#3f434b',GradientType=0 ); /* IE6-9 */
+}
+div.ui-btn .ui-btn-inner {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 8px;
+	border-radius: 6px;
+		background: #b0bccd; /* Old browsers */
+		background: -moz-linear-gradient(top,  #b0bccd 0%, #889bb3 50%, #8094ae 51%, #6d84a2 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(50%,#889bb3), color-stop(51%,#8094ae), color-stop(100%,#6d84a2)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f5f5f5 0%,#DEDEDE 50%,#d8d8d8 51%,#ACACAC 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #b0bccd 0%,#889bb3 50%,#8094ae 51%,#6d84a2 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #b0bccd 0%,#889bb3 50%,#8094ae 51%,#6d84a2 100%); /* IE10+ */
+		background: linear-gradient(top,  #b0bccd 0%,#889bb3 50%,#8094ae 51%,#6d84a2 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0bccd', endColorstr='#6d84a2',GradientType=0 ); /* IE6-9 */
+}
+div.ui-btn-up-b .ui-btn-inner{
+	background: -webkit-linear-gradient(top,  #b0bccd 0%,#889bb3 50%,#8094ae 51%,#6d84a2 100%); 
+}
+
+div.ui-btn-up-c .ui-btn-inner{
+	background-color: #87c485;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #87c485), color-stop(50%, #02880f), color-stop(50%, #02880f), color-stop(100%, #02880f));
+}
+.ui-btn-up-c {
+	text-shadow: none;
+}
+
+
+div.ui-btn-up-d 
+{
+	color: black;
+}
+div.ui-btn-up-d .ui-btn-inner{
+	background: -webkit-linear-gradient(top,  #f5f5f5 0%,#DEDEDE 50%,#d8d8d8 51%,#ACACAC 100%); /* Chrome10+,Safari5.1+ */
+
+}
+
+/*backgrond color set to green*/
+div.ui-btn-up-e
+{
+	color: white;
+}
+div.ui-btn-up-e .ui-btn-inner{
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #87c485), color-stop(50%, #059913),color-stop(50%, #059913), color-stop(50%, #02880f), color-stop(100%, #02880f));
+}
+/*background set to red*/
+div.ui-btn-up-f{
+	color: #fff;
+}
+div.ui-btn-up-f .ui-btn-inner{
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7bfc3), color-stop(50%, #ec202f), color-stop(50%, #ec202f),color-stop(50%, #e10111), color-stop(100%, #ea0f12));
+}
+
+/*background set to black*/
+div.ui-btn-up-g{
+	color: #fff;
+}
+div.ui-btn-up-g .ui-btn-inner{
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #818182), color-stop(50%, #4d4e4d), color-stop(50%, #4d4e4d),color-stop(50%, #323332), color-stop(100%, #323332));
+}
+
+/* === FOOTER BAR === */
+
+.ui-footer {
+-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+		-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+		box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 -1px 0 rgba(0,0,0,0.6) inset;
+			background: #b0bccd; /* Old browsers */
+			background: -moz-linear-gradient(top,  #b0bccd 0%, #889bb3 49%, #8094ae 50%, #6d84a2 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0bccd), color-stop(49%,#889bb3), color-stop(50%,#8094ae), color-stop(100%,#6d84a2)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #b0bccd 0%,#889bb3 49%,#8094ae 50%,#6d84a2 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #b0bccd 0%,#889bb3 49%,#8094ae 50%,#6d84a2 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #b0bccd 0%,#889bb3 49%,#8094ae 50%,#6d84a2 100%); /* IE10+ */
+			background: linear-gradient(top,  #b0bccd 0%,#889bb3 49%,#8094ae 50%,#6d84a2 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0bccd', endColorstr='#6d84a2',GradientType=0 ); /* IE6-9 */
+
+}
+.ui-footer .ui-btn {
+	border: 0 none;
+	background: transparent;
+}
+.ui-footer .ui-btn-active {
+	background: none rgba(255,255,255,0.14);
+		-webkit-border-radius: 4px !important;
+		-moz-border-radius: 4px !important;
+		border-radius: 4px !important;
+}
+.ui-footer .ui-btn-inner {
+	border-color: #434343;
+	padding-top: 40px !important;
+}
+.ui-footer .ui-btn-text {
+	font-size: 10px;
+	text-shadow: 0 none;
+}
+.ui-footer .ui-icon-custom.ui-icon {
+	width: 32px;
+	height: 32px;
+	margin-left: -16px;
+}
+/* fixes issue #25 */
+.ui-footer .ui-icon-shadow {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+	#tabA .ui-icon {
+		background: url(images/tabSprite.png) 0 0 no-repeat;
+	}
+		#tabA.ui-btn-active .ui-icon {
+			background: url(images/tabSprite.png) -32px 0 no-repeat;
+		}
+	#tabB .ui-icon {
+		background: url(images/tabSprite.png) 0 -32px no-repeat;
+	}
+		#tabB.ui-btn-active .ui-icon {
+			background: url(images/tabSprite.png) -32px -32px no-repeat;
+		}
+	#tabC .ui-icon {
+		background: url(images/tabSprite.png) 0 -64px no-repeat;
+	}
+		#tabC.ui-btn-active .ui-icon {
+			background: url(images/tabSprite.png) -32px -64px no-repeat;
+		}
+
+/* navbar in the header */
+.ui-header .ui-btn-icon-left .ui-btn-inner, .ui-footer .ui-btn-icon-left .ui-btn-inner, .ui-mini.ui-btn-icon-left .ui-btn-inner, .ui-mini .ui-btn-icon-left .ui-btn-inner
+{
+	background: -webkit-linear-gradient(top, #b0bccd 0%,#889bb3 50%,#8094ae 51%,#6d84a2 100%);
+}
+

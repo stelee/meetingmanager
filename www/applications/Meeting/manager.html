@@ -1,0 +1,20 @@
+<div data-role="page" self-fVersion="2" id="meeting_manager">
+	<div data-role="header" data-position="fixed">
+        <h1>当前会议</h1>
+    </div>
+    <div data-role="content">
+    	<ul data-role="listview" id="currentmeeting_list">
+
+
+    	</ul>
+    	<div class="toolbox modalPanel meetingmanagerbox">
+    		<ul>
+    			<li><input type="image" src="../../images/add.png" id="addContactBtn"/></li>
+    			<li><input type="image" src="../../images/sound.png" self-callback="muteMe"/></li>
+    			<li><input type="image" src="../../images/record_no.png" self-callback="recordMe"/></li>
+    		</ul>
+    		<div class="seperator"></div>
+    		<button data-theme="f" id="endmeetingBtn">结束管理会议</button>
+    	</div>
+    </div>
+</div>

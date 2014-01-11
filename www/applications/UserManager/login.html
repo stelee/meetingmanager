@@ -1,0 +1,25 @@
+<div data-role="page" id="login" self-fVersion="2">
+    <style type="text/css">
+        .verifyZone
+        {
+            margin-top:100px;
+        }
+    </style>
+    <div data-role="content" class="center">
+        <div class="loginMain">
+            <h1>请输入您注册的姓名，老手机号和新手机号，获得验证码，填写老手机号上收到的验证码完成注册。</h1>
+            <div class="myForm">
+                <input type="text" name="name" id="name" placeholder="姓名"/>
+                <input type="text" name="oldPhoneNumber" id="oldPhoneNumber" placeholder="老手机号码"/>
+                <input type="text" name="newPhoneNumber" id="newPhoneNumber" placeholder="新手机号码"/>
+                <input type="text" name="areaNumber" id="areaNumber" placeholder="默认区号"/>
+                <button id="getVerificationCodeBtn" data-theme="d" self-callback="getVerifyCode">获得验证码</button>
+                <div class="verifyZone">
+                    <input type="text" name="verifyCode" id="verifyCode" placeholder="填写验证码">
+                    <button id="finishRegisterBtn" data-theme="c" self-callback="verified">完成注册</button>
+                    <button id="cancelRegisterBtn" data-theme="d" self-callback="cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

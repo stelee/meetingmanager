@@ -1,0 +1,203 @@
+.loginMain{
+	background:-webkit-linear-gradient(top,#a2a9b2,#535d6c);
+	text-align:center;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.loginMain img
+{
+	height: 30%;
+}
+.loginMain h1
+{
+	font-size: 16px;
+	text-shadow: 0 2px 0 #666;
+	text-align: left;
+	color: #fff;
+	margin: 0px 30px 0px 30px;
+	margin-bottom: 20px;
+	clear: both;
+}
+.fullscreen
+{
+	margin:-15px;
+}
+.loginMain .myForm
+{
+	width: 90%;
+margin: auto;
+margin-top: 30px;
+}
+.fullLengthToLeft, .ui-header .fullLengthToLeft.ui-title
+{
+	text-align: left;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.myDivider{
+	background: -webkit-linear-gradient(top, #b0bccd  0%,#889bb3 100%); /* Chrome10+,Safari5.1+ */
+}
+.itemSelected
+{
+	background-image: url(../images/choose_ok.png);
+	background-repeat: no-repeat;
+	background-position-x: 96%;
+	background-position-y: center;
+	background-size: 22px;
+}
+.seperator
+{
+	clear: both;
+}
+.toolBox
+{
+	width: 100%;
+	height: 116px;
+	background-color: #a3a6ac;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #cacccf), color-stop(3%, #a3a6ac),color-stop(25%, #7f838b),color-stop(25%, #60656f),color-stop(100%, #7d818a));
+	border-top: 2px solid #323335;
+	padding-top: 10px;
+	position: absolute;
+	bottom: 88px;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: -24px;
+}
+/*page css*/
+
+#usermanager_index div[data-role=content],#login div[data-role=content]{
+	padding: 0;
+}
+#usermanager_do_register div[data-role=content]{
+	padding: 0;
+}
+#startmeeting_index .ui-header .fullLengthToLeft.ui-title{
+	text-align: left;
+	margin-right: 0px;
+	margin-left: 5px;
+	width: 20%;
+	float: left;
+}
+#startmeeting_index #selectedContactList{
+	width: 78%;
+	float: right;
+	margin-top: .6em;
+}
+#startmeeting_index #selectedContactList div{
+	margin: 2px;
+	padding: 3px;
+	border: 1px solid white;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px black;
+	float: left;
+}
+#contactList{
+	height: 418px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#goMeetingBtn{
+	
+	position: absolute;
+	top: 471;
+	margin: auto;
+	left: 15px;
+	right: 15px;
+}
+/*menu button*/
+.ui-icon{
+	background-size: 75px;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+	background-color: transparent;
+}
+#menu_startmeeting_index .ui-icon {
+	background-image: url(../images/icons/11.png);
+}
+#menu_currentmeeting_index .ui-icon{
+	background-image: url(../images/icons/12.png);
+}
+#menu_meetinghistory_index .ui-icon{
+	background-image: url(../images/icons/13.png);
+}
+#menu_appointment_index .ui-icon{
+	background-image: url(../images/icons/14.png);
+}
+#menu_settings_index .ui-icon{
+	background-image: url(../images/icons/15.png);
+}
+#menu_contact_history .ui-icon{
+	background-image: url(../images/icons/13.png);
+}
+#menu_contactlist .ui-icon{
+	background-image: url(../images/icons/17.png);
+}
+#menu_dial_pad .ui-icon{
+	background-image: url(../images/icons/18.png);
+}
+#menu_meeting_manager .ui-icon{
+	background-image: url(../images/icons/19.png);
+}
+/*status during the conference call*/
+#currentmeeting_list .ui-li-heading
+{
+	float: left;;
+}
+.callingstatus
+{
+	float: right;
+    width: 100px;
+    height: 36px;
+    background-size: contain;
+	background-repeat: no-repeat;
+}
+.cls_onmeeting
+{
+	background-image: url(../images/icons/meeting_now.png)
+}
+.cls_oncalling
+{
+	background-image: url(../images/icons/calling.png)
+}
+.cls_offline
+{
+	background-image: url(../images/icons/leave.png)
+}
+.cls_nocontact
+{
+	background-image: url(../images/icons/no_conect.png)	
+}
+
+.modalPanel
+{
+	bottom: 24px;
+	height: 125px;
+}
+.meetingmanagerbox ul{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+}
+.meetingmanagerbox li {
+	float: left;
+	list-style-type: none;
+	height: 66px;
+	border: 0px;
+	background: url(../images/line.png) no-repeat right;
+	width: 33%;
+	text-align: center;
+}
+.meetingmanagerbox li:last-child
+{
+	background-image: none
+}
+.buttonLayoutCenter{
+	text-align: center;
+}
+
+#user_center h1{
+	text-align: center;
+	font-size: 28;
+}
+

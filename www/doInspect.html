@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Walsh QA Inspector</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="jquery.mobile-1.1.1.min.css"/>
+		<link rel="stylesheet" href="css/qainspector.walshint.css"/>
+		<script src="js/jquery-1.8.0.min.js"></script>
+		<script src="js/jquery.mobile-1.1.1.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="checklist">
+			<div data-role="header">
+				<a href="inspections.html" data-icon="back" rel="external">Back</a>
+				<h1>Inspect</h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview">
+					<li><a href="#check" onclick="setCheckItem(this)">handling and HVAC</a></li>
+					<li><a href="#check" onclick="setCheckItem(this)">Chemicals storage</a></li>
+					<li><a href="#check" onclick="setCheckItem(this)">Covered HVAC</a></li>
+					<li><a href="#check" onclick="setCheckItem(this)">Debris chutes</a></li>
+				</ul>
+			</div>
+		</div>
+		<script language="JavaScript">
+			function setCheckItem(linkObj){
+				$("#checkItemName").text($(linkObj).text());
+			}
+		</script>
+		<div data-role="page" id="check">
+			<div data-role="header">
+				<a href="#checklist" data-icon="back">Back</a>
+				<h1>Details</h1>
+			</div>
+			<div data-role="content">
+				<h3 id="checkItemName">Unknown</h3>
+			</div>
+		</div>
+	</body>
+</html>
