@@ -7,8 +7,15 @@ define(function(require,exports,module){
 			listview.render(contacts,function(contact,$li){
 				$li.attr("self-contact",contact);
 				$li.text(getContactNameByNumber(contact));
+				$li.on('click',function(){
+					addContact(contact);
+				});
 			})
 		});
+	}
+	var addContact=function(number){
+		__.parameters.set("dialNumber",number);
+		_CHG("applications/StartMeeting/index.html");
 	}
 	module.exports.onEnter=onEnter;
 })

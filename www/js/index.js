@@ -6,7 +6,7 @@ var index_page_onEnter=function(){
   	}else{
   		$.mobile.changePage(core.utils.getAbsolutePath("applications/StartMeeting/index.html"))
   	}
-  },1000);
+  },500);
   	
   //$("#gotoLink").trigger("click");
 }

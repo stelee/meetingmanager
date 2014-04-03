@@ -53,13 +53,14 @@ app.startmeeting.loadContact=function(){
 	contact.on(function(){
 		var listview=new comp.Listview("#contactList");
 		app.startmeeting.contactList=this.entities;
-
+		var naviChars=[];
 		listview.render(this.entities,function(entity,$li){
 			if(entity.type=="divider"){
 				$li.attr("data-filtertext",entity.name);
 				$li.attr('data-role="list-divider"');
 				$li.addClass("ui-li-divider");
 				$li.addClass("myDivider");
+				naviChars.push(entity.name);
 			}else{
 				$li.attr("data-filtertext",entity.name+","+entity.pinyinstring+","+entity.number);
 				$li.click(app.startmeeting.setSelect);
@@ -74,8 +75,38 @@ app.startmeeting.loadContact=function(){
 			
 			
 		});
-		setTimeout(app.startmeeting.loadSelectedContact,1000);
+		naviChars.forEach(function(naviChar){
+			$li=$('<li>'+naviChar+'</li>');
+			$("#scrollTo").append($li);
+			$li.on('click',function(){
+				scrollToNavChar(naviChar);
+			})
+		});
+		setTimeout(function(){
+			app.startmeeting.loadSelectedContact();
+			resizeNavCharBar();
+		},1000);
 	}).listWithDivider();
+}
+var resizeNavCharBar=function(){
+	var count=$("#scrollTo").children().length;
+	var height=($("#goMeetingBtn").position().top-$("div[data-role=header]").height()-22)/count;
+	$("#scrollTo").show();
+	$("#scrollTo li").height(height);
+	$("#scrollTo li").css("line-height",height+"px");
+};
+var scrollToNavChar=function(navChar)
+{
+	try{
+		var scrollTop=
+		$("li[data-filtertext=" + navChar + "]").position().top
+		- $.mobile.activePage.find("div[data-role=header]").height()
+		- 50;
+		$("#contactList").scrollTop(scrollTop);
+	}catch(e){
+
+	}
+	
 }
 app.startmeeting.setSelect=function(e){
 	$li=$(e.target);

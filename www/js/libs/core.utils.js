@@ -790,7 +790,7 @@ core.utils.fn.loadPage=function(appName,pageName)
     {
         pageName="index";
     }
-    $.mobile.changePage(core.utils.getAbsolutePath("/applications/{appName}/{pageName}.html".bind(
+    $.mobile.changePage(core.utils.getAbsolutePath("applications/{appName}/{pageName}.html".bind(
     {
         appName:appName,
         pageName:pageName
