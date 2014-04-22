@@ -105,7 +105,7 @@ margin-top: 30px;
 	right: 15px;
 }
 /*menu button*/
-.ui-icon{
+#defaultFooter .ui-icon{
 	background-size: 75px;
 	background-repeat: no-repeat;
 	background-position: 50% 35%;
