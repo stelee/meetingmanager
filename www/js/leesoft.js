@@ -83,6 +83,7 @@ var getResultTuple=function(entity){
 		2:"oncalling",
 		3:"offline",
 		4:"nocontact",
+		5:"offline",
 		"_":"unknown"
 	});
 	return ret;

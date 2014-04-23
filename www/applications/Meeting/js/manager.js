@@ -10,7 +10,7 @@ define(function(require,exports,module){
 				gapAlert("目前无可管理的会议");
 				_loadApp("Meeting","history");
 			}else{
-				timer=setInterval(getMeetingStatus,1000);
+				timer=setInterval(getMeetingStatus,5000);
 			}
 			
 		},function(){
@@ -41,8 +41,28 @@ define(function(require,exports,module){
 					var resultTuple=getResultTuple(entity);
 					var html="<h1>"+resultTuple[0]+"</h1><div class='callingstatus cls_"+resultTuple[1]+"'></div><div class='seperator'></div>";
 					$li.append(html);
+					if(entity.status==5)
+					{
+						//binding the function that can redial the user
+						$li.click(function(){
+							var phoneNumber=entity.phone;
+							var contactName=resultTuple[0];
+							reDial(contactName,phoneNumber);
+						})
+					}
 				});
 			});
+	}
+
+	var reDial=function(contactName,phoneNumber)
+	{
+		gapConfirm("是否再次呼叫 " + contactName + "?",function(){
+			var service=require("js/services/addToMeeting.service");
+			service(meetingId,
+				[phoneNumber],function(){
+					
+				});
+		});
 	}
 	var endMeeting=function(){
 		var service=require("js/services/ext.baseService");
