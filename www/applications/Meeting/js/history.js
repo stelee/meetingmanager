@@ -8,12 +8,14 @@ define(function(require,exports,module){
 				$li.append("<h1>会议于 {datetime}</h1>".bind("datetime",item.conftime));
 				$li.append("<p>参会人员：{participants}</p>".bind("participants",getContacts(item.phones).join(",")))
 				var $div=$("<div></div>");
+				var $btn;
+
 				if(item.isRecorded==1){
-					var $btn=$("<button data-inline='true' data-theme='e'>收听录音</button>")
+					$btn=$("<button data-inline='true' data-theme='e'>收听录音</button>")
 					$div.append($btn);
 					$btn.button();
 					$btn.click(function(e){
-						$li=$(e.target).parents("li:first")
+						var $li=$(e.target).parents("li:first")
 						var confid=$li.attr("self-confid");
 						var service=require("/js/services/replay.service");
 						service(confid,function(results){
@@ -26,11 +28,26 @@ define(function(require,exports,module){
 				$div.append($btn);
 				$btn.button();
 				$btn.click(function(e){
-					$li=$(e.target).parents("li:first")
+					var $li=$(e.target).parents("li:first")
 					var confNumbers=$li.attr("self-confPhones");
 					__.parameters.set("confNumbers",confNumbers);
 					_loadApp("Meeting","make_an_appointment");
 				})
+
+				$btn=$("<button data-inline='true' data-theme='f'>删除会议</button>")
+				$div.append($btn);
+				$btn.button();
+				$btn.click(function(e){
+					var $li=$(e.target).parents("li:first")
+					var confid=$li.attr("self-confid");
+					var service=require("/js/services/meetinghistory.delete.service");
+					service(confid,function(){
+						var $ul=$li.parent();
+						$li.remove();
+						$ul.listview('refresh');
+					})
+				})
+
 				$li.attr("self-confid",item.confid);
 				$li.attr("self-confPhones",item.phones.join(","));
 				$li.append($div);

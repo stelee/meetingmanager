@@ -108,6 +108,8 @@ var scrollToNavChar=function(navChar)
 	}
 	
 }
+
+
 app.startmeeting.setSelect=function(e){
 	$li=$(e.target);
 	if($li.hasClass("itemSelected")){//selected->unselected
@@ -166,7 +168,7 @@ app.startmeeting.loadSelectedContact=function()
 	for(var i in app.startmeeting.contactList){
 		var contact=app.startmeeting.contactList[i];
 		if(contact.selected==true){
-			var $div=$("<div onclick='app.startmeeting.unselect()' self-cIndex='"+i+"'>"+contact.name+"</div>");
+			var $div=$("<div onclick='app.startmeeting.scrollTo()' self-cIndex='"+i+"'>"+contact.name+"</div>");
 			$("#selectedContactList").append($div);
 		}
 		
@@ -178,6 +180,21 @@ app.startmeeting.loadSelectedContact=function()
 
 	//decorator.resetElementTop("startmeeting_index","#startmeeting_index form");
 	//decorator.resetHeight("startmeeting_index","#startmeeting_index ul");
+}
+app.startmeeting.scrollTo=function()
+{
+	var $div=$(event.target);
+	var index=$div.attr("self-cIndex");
+
+	try{
+		var scrollTop=
+		$($("#contactList").children()[index]).position().top
+		- $.mobile.activePage.find("div[data-role=header]").height()
+		- 50;
+		$("#contactList").scrollTop(scrollTop);
+	}catch(e){
+
+	}
 }
 app.startmeeting.unselect=function(){
 	var $div=$(event.target);

@@ -25,7 +25,9 @@ define(function(require,exports,module){
 		getRecentContact:16,
 		getMyMeeting:17,
 		reVerify:18,
-		contact:19
+		contact:19,
+		contactChange:20,
+		deleteMeeting:21
 	}
 
 	var checksum=function(paramN){
