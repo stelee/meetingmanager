@@ -26,7 +26,8 @@ linkCSS("css/theme/iphone/styles.css");
 linkCSS("css/app.css");
 includeJS("support/jquery.js");
 includeJS("support/jquery.mobile-1.3.1.js");
-if(window.navigator.platform!="Win32")
+if(window.navigator.platform!="Win32"
+	&&window.navigator.platform!="MacIntel")
 {
 	includeJS("cordova.js");
 }
