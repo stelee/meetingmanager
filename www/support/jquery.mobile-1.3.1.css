@@ -1206,20 +1206,20 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 }
 .fade.out {
 	opacity: 0;
-	-webkit-animation-duration: 0ms;
+	-webkit-animation-duration: 1ms;
 	-webkit-animation-name: fadeout;
-	-moz-animation-duration: 0ms;
+	-moz-animation-duration: 1ms;
 	-moz-animation-name: fadeout;
-	animation-duration: 0ms;
+	animation-duration: 1ms;
 	animation-name: fadeout;
 }
 .fade.in {
 	opacity: 1;
-	-webkit-animation-duration: 0ms;
+	-webkit-animation-duration: 1ms;
 	-webkit-animation-name: fadein;
-	-moz-animation-duration: 0ms;
+	-moz-animation-duration: 1ms;
 	-moz-animation-name: fadein;
-	animation-duration: 0ms;
+	animation-duration: 1ms;
 	animation-name: fadein;
 }
 .pop {
